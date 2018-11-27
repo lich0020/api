@@ -11,6 +11,7 @@ html {
     padding: 0;
     background-color: #222;
     font-family: 'Oswald', Arial, sans-serif;
+    font-size: 16px;
 }
 
 h1,
@@ -31,7 +32,7 @@ header {
      cursor: pointer;
         height: 40px;
     width: 40px;
-    padding-right: 5px;
+    padding-right: 20%;
 }
 
 #search-button {
@@ -110,7 +111,7 @@ input {
 }
 
 .modalButton {
-    margin-left: 10px;
+    margin-left: 50%;
     color: white;
     background: #222;
      cursor: pointer;
@@ -253,7 +254,7 @@ input {
    position: relative;
     margin-top: 5rem;
     width: 10%;
-    left: calc((100% - 400px)/2);
-    width:400px;
+    left: calc((100% - 15%)/2);
+    width:15%;
     
 }
