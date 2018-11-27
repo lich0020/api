@@ -1,0 +1,263 @@
+/*******FONT IMPORTS********/
+@import url('https://fonts.googleapis.com/css?family=Domine');
+/*serif font inport*/
+/*  Georgia , serif*/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+/*sans-serif font inport*/
+/*arial, sans-serif*/
+
+
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Domine', Arial, sans-serif;
+}
+
+/***************** Header ****************************/
+header {
+/*    display: flex;*/
+    padding: 8px;
+    background-color: #222;
+    justify-content: center;
+/*    justify-content: space-between;*/
+}
+#back-button{
+     cursor: pointer;
+        height: 40px;
+    width: 40px;
+    padding-right: 5px;
+}
+
+#search-button {
+
+    background-color: #222;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.iconic-property-stroke,
+.iconic-property-fill {
+    fill: #01d277;
+    stroke: #01d277;
+    border: 1px solid white;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+     cursor: pointer;
+}
+
+#search-input {
+    width: 200px;
+    height: 40px;
+    font-size: 1.2rem;
+    transition: width 2s;
+}
+
+#search-input:hover {
+    box-shadow: 2px 2px #01d277;
+    width: 300px;
+}
+
+#search-input:focus {
+    box-shadow: 2px 2px #01d277;
+    width: 300px;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+}
+/***************Main***********************/
+
+
+.page {
+/*    display: block;*/
+/*    flex-basis: 100%;*/
+    background-color: #222;
+    justify-content: center;
+}
+
+
+
+.page #search-button {
+    padding: 0 1rem;
+}
+
+h1 {
+
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #888;
+    padding: 5rem 0 5rem 0;
+
+}
+
+#selection {
+    margin-left: 10px;
+    height: 45px;
+}
+
+input {
+    background-color: white;
+    color: black;
+}
+
+.modalButton {
+    margin-left: 10px;
+    color: white;
+    background: #222;
+     cursor: pointer;
+}
+
+
+/**********Movie Cards*******/
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.movieCard {
+    width: 50rem;
+    height: auto;
+    margin: 1rem auto;
+    background-color: #222;
+    color: white;
+    border: 1px solid #01d277;
+    box-shadow: 2px 2px #999;
+    position: relative;
+    top: 0;
+    transition: linear 0.5s;
+
+
+}
+
+.movieCard:hover {
+    box-shadow: 10px 10px #01d277;
+    top: -10px;
+    right: 10px;
+}
+
+.imageSection {
+    float: left;
+    width: 12rem;
+    height: 17rem;
+    margin-right: 1rem overflow: hidden;
+}
+
+/*select only the images that are direct descendants of .imageSection*/
+.imageSection > img {
+    height: 17rem;
+    margin-right: 1rem;
+}
+
+/************ MODAL ****************/
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    width: 500px;
+    height: 280px;
+    z-index: 200;
+    top: calc((100% - 280px)/2);
+    left: calc((100% - 500px)/2);
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #01d277;
+    background-color: #666;
+}
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.off {
+    transform: translateY(-400%);
+}
+
+.on {
+    transform: translateY(0);
+}
+
+.cancelButton,
+.saveButton {
+    width: 120px;
+    position: absolute;
+    border: none;
+    background-color: #01d277;
+    cursor: pointer;
+    padding: 0.25rem 2rem;
+    font-size: 1rem;
+}
+
+.saveButton {
+    bottom: 1rem;
+    right: 4rem;
+    background-color: #01d277;
+}
+
+.cancelButton {
+    bottom: 1rem;
+    left: 4rem;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #666;
+
+    text-align: center;
+}
+
+.modal-header h2 {
+    color: #01d277;
+    background-color: #666;
+}
+
+.modal-radio {
+    text-align: center;
+    margin-top: 4rem;
+    background-color: #666;
+}
+
+.modal label {
+    background-color: #666;
+}
+
+
+
+/************footer******************/
+.attribution {
+    padding-top: 2rem;
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <main>
+
+        <header class='head'>
+
+            <div class='page ' id='movie'>
+                <div>
+                    <h1>Movie Search</h1>
+                </div>
+
+
+            </div>
+
+
+            <div class='page hide' id='tv'>
+                <div>
+                    <h1>TV Show Search</h1>
+                </div>
+            </div>
+
+        <div class='controls'>
+            <div class="backButtonDiv">
+
+                <img id="back-button" data-direction="left" alt="Back Button" title="Back" data-src="img/caret.svg" class="iconic iconic-md" alt='back button' />
+            </div>
+
+
+
+
+
+
+            <div class='search '>
+                <div>
+                    <input type="text" id="search-input" class='search-input' placeholder="search" />
+                </div>
+                <div class="searchButtonDiv">
+
+                    <img id="search-button" alt="Search" title="Search" data-src="img/magnifying-glass.svg" class="iconic iconic-md" alt='search button' />
+                </div>
+            </div>
+
+            <div>
+                <button class="modalButton"><img id="modal-button" alt="Modal Button" title="Modal" data-src="img/menu.svg" class="iconic iconic-md" alt='mode button' /></button>
+            </div>
+            </div>
+        </header>
+
+
+<!--
+        <div class='page ' id='movie'>
+            <div>
+                <h1>Movie Search</h1>
+            </div>
+
+
+        </div>
+
+
+        <div class='page hide' id='tv'>
+            <div>
+                <h1>TV Show Search</h1>
+            </div>
+        </div>
+-->
+
+
+        <div class="page hide" id="search-results">
+            <div>
+                <h1>Results</h1>
+            </div>
+            <section class="title"></section>
+            <section class="content flex-container"></section>
+        </div>
+        <!--        one page -->
+
+
+        <div class="page hide" id="recommend-results">
+            <div>
+                <h1>Recomendations</h1>
+            </div>
+            <section class="title"></section>
+            <section class="content flex-container"></section>
+        </div>
+        <!--     two page-->
+
+
+
+
+        <!--************DO NOT EDIT************-->
+        <footer>
+            <div class="attribution">
+                <a href="https://www.themoviedb.org/"><img src="/img/powered-by.svg" alt="themoviedb">
+                </a>
+            </div>
+        </footer>
+        <!--************DO NOT EDIT************-->
+    </main>
+
+
+    <!--****************DO NOT EDIT BELOW THIS LINE************-->
+    <div class="overlay hide">&nbsp;</div>
+    <div class="modal off">
+        <div class="modal-header">
+            <h2>What would you like to search?</h2>
+        </div>
+        <div class="modal-radio">
+            <input type="radio" name="pref" value="movie" id="movie" checked>
+            <label for="Movie">Movie</label>
+
+            <input type="radio" name="pref" value="tv" id="tvShow" checked>
+            <label for="tvShow">TV Shows</label>
+
+
+        </div>
+        <button class="cancelButton">Cancel</button>
+        <button class="saveButton">Save</button>
+
+    </div>
+
+    <script src="js/iconic.min.js"></script>
+    <script src="js/key.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
