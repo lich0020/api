@@ -1,10 +1,7 @@
 /*******FONT IMPORTS********/
 @import url('https://fonts.googleapis.com/css?family=Domine');
-/*serif font inport*/
-/*  Georgia , serif*/
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-/*sans-serif font inport*/
-/*arial, sans-serif*/
+
 
 
 
@@ -24,11 +21,11 @@ h3 {
 
 /***************** Header ****************************/
 header {
-/*    display: flex;*/
+
     padding: 8px;
     background-color: #222;
     justify-content: center;
-/*    justify-content: space-between;*/
+
 }
 #back-button{
      cursor: pointer;
@@ -82,8 +79,6 @@ header {
 
 
 .page {
-/*    display: block;*/
-/*    flex-basis: 100%;*/
     background-color: #222;
     justify-content: center;
 }
@@ -158,7 +153,6 @@ input {
     margin-right: 1rem overflow: hidden;
 }
 
-/*select only the images that are direct descendants of .imageSection*/
 .imageSection > img {
     height: 17rem;
     margin-right: 1rem;
@@ -256,9 +250,10 @@ input {
 
 /************footer******************/
 .attribution {
-    padding-top: 5rem;
-    margin: 1 auto;
+   position: relative;
+    margin-top: 5rem;
     width: 10%;
-/*    align-self: center;*/
-/*    justify-content: center;*/
+    left: calc((100% - 400px)/2);
+    width:400px;
+    
 }

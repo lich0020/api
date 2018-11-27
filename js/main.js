@@ -74,14 +74,6 @@ let movieSearch = (function () { // declaring an iife
     function getDataFromLocalStorage() {
 
 
-        //check if image secure URL and sizes array are saved in local storage, if not all getPosterURLAndSizes()
-
-
-
-        //if in local storage check if saved over 60 min ago, if true then call getPosterURLAndSizes()
-
-        // in local storage and less than 60min old, load and use from local storage
-
         getPosterURLAndSizes();
     }
 
@@ -109,14 +101,12 @@ let movieSearch = (function () { // declaring an iife
     function startSearch() {
         console.log("start search");
 
-        //    searchString = document.getElementById("search-input").value;
         searchString = document.querySelector('.search-input').value;
         if (!searchString) {
             alert("Please enter search data");
             document.getElementById("search-input").focus();
             return;
         }
-        // this is a new search so you should reset any existing page data
         document.querySelector("#search-results>.content").innerHTML = "";
 
         getSearchResults(searchString);
