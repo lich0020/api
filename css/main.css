@@ -256,8 +256,9 @@ input {
 
 /************footer******************/
 .attribution {
-    padding-top: 2rem;
-    display: block;
-    margin: 0 auto;
-    width: 20%;
+    padding-top: 5rem;
+    margin: 1 auto;
+    width: 10%;
+/*    align-self: center;*/
+/*    justify-content: center;*/
 }
